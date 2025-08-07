@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Creator Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: cadetblue;
+
+        }
+
+        header {
+
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        nav {
+            background: lightpink;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: dimgray;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            animation: fadeIn 2s;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .promo-video {
+            text-align: center;
+            margin-top: 60px;
+            animation: fadeInUp 2s;
+        }
+
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nikhil Content Creation</h1>
+        <p>Professional content services for creators, influencers, and brands.</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#video">Promo Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2 style="text-align:center; margin-bottom: 40px;">Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <img src="download (14).jpg" alt="Video Editing">
+                <h3>Video Editing</h3>
+                <p>High-quality edits, transitions, subtitles and storytelling.</p>
+
+            </div>
+            <div class="card">
+                <img src="download.jpg" alt="Thumbnail Design">
+                <h3>Thumbnail Design</h3>
+                <p>Eye-catching thumbnails to improve your CTR.</p>
+            </div>
+
+            <div class="card">
+                <img src="download.png" alt="Social Media Content">
+                <h3>Social Media Content</h3>
+                <p>Reels, shorts, and story packs designed for engagement.</p>
+
+            </div>
+            <div class="card">
+                <img src="download (1).jpg" alt="Branding">
+                <h3>Personal Branding</h3>
+                <p>Consistent visuals, fonts, and voice for your online identity.</p>
+            </div>
+            <div class="card"><img src="download (1).png" alt="SEO optimazation">
+                <h3>Ranking your content</h3>
+                <p>Create traffic and rank your content.</p></div>
+
+        </div>
+    </section>
+
+    <section id="video" class="promo-video">
+        <h2 style="margin-bottom: 20px;">Watch Our Work</h2>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us: NJNikhilcontentcreator@Gmail.com | +91 9983660116</p>
+        <p>&copy; 2025 Nikhil Content Services. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
